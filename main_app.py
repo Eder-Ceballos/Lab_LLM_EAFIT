@@ -32,11 +32,13 @@ st.sidebar.divider()
 st.sidebar.header("⚙️ Parámetros del Modelo")
 
 # Modelos estables y gratuitos en la capa free de Groq
+# Modelos activos y estables en la API de Groq
 model_options = [
     "llama-3.1-8b-instant",
     "llama-3.3-70b-versatile",
-    "mixtral-8x7b-32768",
-    "gemma2-9b-it"
+    "meta-llama/llama-4-scout-17b-16e-instruct",
+    "qwen/qwen3-32b",
+    "gpt-oss-20b"
 ]
 selected_model = st.sidebar.selectbox("Selecciona el LLM", model_options)
 
